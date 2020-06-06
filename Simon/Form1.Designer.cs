@@ -1,4 +1,6 @@
-﻿namespace Simon
+﻿using System.Windows.Forms;
+
+namespace Simon
 {
     partial class Form1
     {
@@ -19,6 +21,8 @@
             }
             base.Dispose(disposing);
         }
+
+        
 
         #region Código generado por el Diseñador de Windows Forms
 
@@ -52,6 +56,7 @@
             this.imagen_0.TabIndex = 0;
             this.imagen_0.TabStop = false;
             this.imagen_0.Tag = "0";
+            this.imagen_0.WaitOnLoad = true;
             this.imagen_0.Click += new System.EventHandler(this.imagen_0_Click);
             this.imagen_0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.imagen_0_MouseDown);
             this.imagen_0.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_0_MouseUp);
@@ -59,6 +64,7 @@
             // imagen_1
             // 
             this.imagen_1.Image = global::Simon.Properties.Resources.button_yellow;
+            this.imagen_1.InitialImage = global::Simon.Properties.Resources.button_yellow;
             this.imagen_1.Location = new System.Drawing.Point(286, 41);
             this.imagen_1.MaximumSize = new System.Drawing.Size(200, 200);
             this.imagen_1.Name = "imagen_1";
@@ -67,6 +73,7 @@
             this.imagen_1.TabIndex = 1;
             this.imagen_1.TabStop = false;
             this.imagen_1.Tag = "1";
+            this.imagen_1.WaitOnLoad = true;
             this.imagen_1.Click += new System.EventHandler(this.imagen_1_Click);
             this.imagen_1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.imagen_1_MouseDown);
             this.imagen_1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_1_MouseUp);
@@ -74,6 +81,7 @@
             // imagen_3
             // 
             this.imagen_3.Image = global::Simon.Properties.Resources.button_green;
+            this.imagen_3.InitialImage = global::Simon.Properties.Resources.button_green;
             this.imagen_3.Location = new System.Drawing.Point(286, 282);
             this.imagen_3.MaximumSize = new System.Drawing.Size(200, 200);
             this.imagen_3.Name = "imagen_3";
@@ -82,6 +90,7 @@
             this.imagen_3.TabIndex = 2;
             this.imagen_3.TabStop = false;
             this.imagen_3.Tag = "3";
+            this.imagen_3.WaitOnLoad = true;
             this.imagen_3.Click += new System.EventHandler(this.imagen_3_Click);
             this.imagen_3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.imagen_3_MouseDown);
             this.imagen_3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_3_MouseUp);
@@ -89,6 +98,7 @@
             // imagen_2
             // 
             this.imagen_2.Image = global::Simon.Properties.Resources.button_red;
+            this.imagen_2.InitialImage = global::Simon.Properties.Resources.button_red;
             this.imagen_2.Location = new System.Drawing.Point(47, 282);
             this.imagen_2.MaximumSize = new System.Drawing.Size(200, 200);
             this.imagen_2.Name = "imagen_2";
@@ -97,6 +107,7 @@
             this.imagen_2.TabIndex = 3;
             this.imagen_2.TabStop = false;
             this.imagen_2.Tag = "2";
+            this.imagen_2.WaitOnLoad = true;
             this.imagen_2.Click += new System.EventHandler(this.imagen_2_Click);
             this.imagen_2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.imagen_2_MouseDown);
             this.imagen_2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_2_MouseUp);
@@ -155,6 +166,23 @@
         private System.Windows.Forms.PictureBox imagen_2;
         private System.Windows.Forms.Button btn_iniciar;
         private System.Windows.Forms.Label lbl_puntaje;
+
+        public void SetImagen_0(System.Drawing.Image imagen)
+        {
+            this.imagen_0.Image = imagen;
+        }
+        public void SetImagen_1(System.Drawing.Image imagen)
+        {
+            this.imagen_1.Image = imagen;
+        }
+        public void SetImagen_2(System.Drawing.Image imagen)
+        {
+            this.imagen_2.Image = imagen;
+        }
+        public void SetImagen_3(System.Drawing.Image imagen)
+        {
+            this.imagen_3.Image = imagen;
+        }
     }
 }
 
